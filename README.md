@@ -21,6 +21,12 @@ Para utilizar, execute o programa seguido do comando e da flag `--host`.
 - **txt** *(Extra)*: Busca registros de texto (TXT), muito utilizados para validações de segurança (como SPF) e propriedade de domínio.
 - **status** *(Extra)*: Realiza uma requisição HTTP para o site e retorna o código de status (ex: 200 OK, 404 Not Found), verificando se o serviço está online.
 
+### Exemplo de Uso
+
+```bash
+go run main.go status --host google.com
+```
+
 ## 🚀 Instalação
 
 ### Pré-requisitos
@@ -90,30 +96,6 @@ As seguintes bibliotecas (pacotes) foram utilizadas na construção desta ferram
 - **net**: Para interações de rede, especificamente consultas de DNS (Lookup).
 - **net/http**: Para realizar requisições web e verificar status de sites.
 - **github.com/urfave/cli**: Framework externo utilizado para facilitar a criação da estrutura da linha de comando, flags e ajuda.
-
-## 🛣️ Roadmap
-
-Features planejadas para futuras versões:
-
-- [ ] **ping** - Testar latência e conectividade com hosts
-- [ ] **portas** - Scanner de portas abertas (80, 443, 22, etc.)
-- [ ] **whois** - Informações de registro de domínio
-- [ ] **ssl** - Verificação de certificados SSL/TLS
-- [ ] **trace** - Traceroute para visualizar caminho até o host
-
-## 🤝 Contribuindo
-
-Pull requests são bem-vindos! Para mudanças importantes, abra uma issue primeiro para discutir o que você gostaria de mudar.
-
-1. Fork o projeto
-2. Crie sua feature branch (`git checkout -b feature/NovaFeature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/NovaFeature`)
-5. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto é open source e está disponível para fins educacionais.
 
 ## 🙏 Agradecimentos
 
