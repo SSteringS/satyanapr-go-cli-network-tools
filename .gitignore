@@ -1,0 +1,30 @@
+# Binários compilados
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+app_linha_de_comando
+main
+
+# Arquivos de teste
+*.test
+*.out
+
+# Go workspace
+/vendor/
+/Godeps/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Go sum backup
+go.sum.backup
